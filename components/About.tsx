@@ -7,13 +7,13 @@ import React from "react";
 
 const About = ({ abouts }: { abouts: GetAboutDataParams[] }) => {
   return (
-    <motion.div
-      whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
-      transition={{ duration: 0.5 }}
+    <div
+      id="about"
+      className=" h-screen bg-white pt-16 max-lg:h-fit max-xs:pt-[72px] dark:bg-black"
     >
-      <div
-        id="about"
-        className=" h-screen bg-white pt-16 max-lg:h-fit dark:bg-black"
+      <motion.div
+        whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
+        transition={{ duration: 0.5 }}
       >
         <h2 className="text-center text-[2.75rem] font-extrabold capitalize text-black max-xs:text-[2rem] xxl:text-[4rem] dark:text-white">
           I Know that <span className=" text-primary-500">Good Design</span>{" "}
@@ -46,8 +46,8 @@ const About = ({ abouts }: { abouts: GetAboutDataParams[] }) => {
             </motion.div>
           ))}
         </div>
-      </div>
-    </motion.div>
+      </motion.div>
+    </div>
   );
 };
 

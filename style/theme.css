@@ -167,6 +167,13 @@
     @apply text-[12px] font-semibold leading-[15.6px];
   }
 
+  .p-text {
+    @apply text-[0.8rem] text-left text-gray-500 leading-6 xxl:text-[1.75rem];
+  }
+  .bold-text {
+    @apply text-[1rem] font-extrabold text-left text-black max-xs:text-[0.9rem] xxl:text-[2rem];
+  }
+
   .subtle-medium {
     @apply text-[10px] font-medium leading-[13px] !important;
   }

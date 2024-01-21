@@ -19,6 +19,8 @@ import skill from "../public/assets/gear-svgrepo-com.svg";
 import blog from "../public/assets/blog-writing-svgrepo-com.svg";
 import contact from "../public/assets/telephone.svg";
 import connect from "../public/assets/icons8-connect.svg";
+import eye from "../public/assets/eye.svg";
+import github from "../public/assets/github.svg";
 
 const images = {
   bgWhite,
@@ -42,6 +44,8 @@ const images = {
   blog,
   contact,
   connect,
+  eye,
+  github,
 };
 
 export default images;
