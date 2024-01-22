@@ -36,13 +36,11 @@ const Work = ({ data }: { data: GetWorkDataParams[] }) => {
     }, 500);
   };
   return (
-    <div
-      id="work"
-      className=" dark:dark-bgGrad h-fit w-full flex-1 flex-col bg-[#EDF2F8] pt-16 max-lg:h-fit max-xs:pt-[72px]"
-    >
+    <div id="work">
       <motion.div
         whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
         transition={{ duration: 0.5 }}
+        className=" dark:dark-bgGrad h-fit w-full flex-1 flex-col bg-[#EDF2F8] pt-16 max-lg:h-fit max-xs:pt-[72px]"
       >
         <h2 className="text-center text-[2.75rem] font-extrabold capitalize text-black max-xs:text-[2rem] xxl:text-[4rem] dark:text-white">
           My Creative <span className=" text-primary-500">Portfolio</span>{" "}
@@ -58,7 +56,7 @@ const Work = ({ data }: { data: GetWorkDataParams[] }) => {
                 className={`${
                   activeFilter === item
                     ? "bg-primary-500 text-white "
-                    : "bg-white text-black"
+                    : "bg-white text-black dark:bg-[#0D1321] dark:text-white"
                 } flex-center p-text m-2 cursor-pointer rounded-lg  px-4 py-2 font-extrabold  transition-all duration-300 ease-in-out hover:bg-primary-500 hover:text-white xxl:rounded-[0.85rem] xxl:px-8 xxl:py-4 `}
               >
                 {item}
@@ -74,7 +72,8 @@ const Work = ({ data }: { data: GetWorkDataParams[] }) => {
         >
           {filterWork.map((work, index) => (
             <div
-              className=" flex-center m-8 w-[270px] cursor-pointer flex-col rounded-lg bg-white p-4 text-black transition-all duration-300 ease-in-out hover:shadow-[0_0_25px_rgba(0,0,0,0.2)] max-xs:m-4 max-xs:w-full xxl:w-[470px] xxl:rounded-xl xxl:p-5"
+              className=" flex-center m-8 w-[270px] cursor-pointer flex-col rounded-lg bg-white p-4 text-black transition-all duration-300 ease-in-out hover:shadow-[0_0_25px_rgba(0,0,0,0.2)] max-xs:m-4 max-xs:w-full xxl:w-[470px] xxl:rounded-xl xxl:p-5 dark:bg-[#0D1321] dark:hover:shadow-[0_0_25px_rgba(255,255,255,0.2)]
+              "
               key={index}
             >
               <div className=" flex-center relative h-[230px] w-full xxl:h-[350px]">
@@ -133,15 +132,15 @@ const Work = ({ data }: { data: GetWorkDataParams[] }) => {
                 </motion.div>
               </div>
               <div className=" flex-center relative w-full flex-col p-2">
-                <h4 className="bold-text mt-4 leading-6 xxl:mt-12">
+                <h4 className="bold-text mt-4 leading-6 xxl:mt-12 dark:text-white">
                   {work.title}
                 </h4>
-                <p className="p-text" style={{ marginTop: 10 }}>
+                <p className="p-text dark:text-white" style={{ marginTop: 10 }}>
                   {work.description}
                 </p>
 
-                <div className=" flex-center absolute -top-6 rounded-[10px] bg-white px-4 py-2">
-                  <p className="p-text">{work.tags[0]}</p>
+                <div className=" flex-center absolute -top-6 rounded-[10px] bg-white px-4 py-2 dark:bg-[#0D1321]">
+                  <p className="p-text dark:text-white">{work.tags[0]}</p>
                 </div>
               </div>
             </div>

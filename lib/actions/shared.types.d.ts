@@ -4,6 +4,11 @@ export interface GetAboutDataParams {
   imageUrl: any;
 }
 
+export interface GetSkillsDataParams {
+  name: string;
+  icon: any;
+}
+
 export interface GetWorkDataParams {
   title: string;
   description: string;
@@ -11,4 +16,9 @@ export interface GetWorkDataParams {
   imageUrl: any;
   projectLink: string | null;
   codeLink: string | null;
+}
+
+export interface GetExperienceDataParams {
+  works: Array<{ name: string; desc: string; company: string; _key: string }>;
+  year: number;
 }
