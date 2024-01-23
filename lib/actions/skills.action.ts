@@ -4,6 +4,7 @@ export async function getSkillsData() {
   const query = `*[_type == "skills"] {
     'icon': icon.asset._ref,
       name,
+      tags,
       
   }`;
   const data = await client.fetch(query);

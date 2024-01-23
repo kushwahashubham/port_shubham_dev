@@ -8,11 +8,6 @@ const skills = {
       title: "Name",
       type: "string",
     },
-    // {
-    //   name: "bgColor",
-    //   title: "BgColor",
-    //   type: "string",
-    // },
     {
       name: "icon",
       title: "Icon",
@@ -20,6 +15,18 @@ const skills = {
       options: {
         hotspot: true,
       },
+    },
+    {
+      name: "tags",
+      title: "Tags",
+      type: "array",
+      of: [
+        {
+          name: "tag",
+          title: "Tag",
+          type: "string",
+        },
+      ],
     },
   ],
 };

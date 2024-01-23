@@ -7,6 +7,7 @@ export interface GetAboutDataParams {
 export interface GetSkillsDataParams {
   name: string;
   icon: any;
+  tags: string[];
 }
 
 export interface GetWorkDataParams {
