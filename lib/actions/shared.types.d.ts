@@ -1,3 +1,8 @@
+interface Image {
+  url: string; // URL of the image.
+  altText: string; // Alternate text for the image.
+}
+
 export interface GetAboutDataParams {
   title: string;
   description: string;
@@ -22,4 +27,45 @@ export interface GetWorkDataParams {
 export interface GetExperienceDataParams {
   works: Array<{ name: string; desc: string; company: string; _key: string }>;
   year: number;
+}
+
+interface Author {
+  name: string; // Name of the author.
+  bio: string; // Author's biography.
+  avatar: Image; // Author's avatar image.
+  socialLinks: string[]; // Array of author's social media links.
+}
+
+interface Category {
+  name: string; // Name of the category.
+  description: string; // Description of the category.
+  icon?: Image; // (Optional) Icon representing the category.
+}
+
+export interface GetPostDataParams {
+  map(
+    arg0: (
+      post: GetPostDataParams,
+      index: number
+    ) => import("react").JSX.Element
+  ): import("react").ReactNode | Iterable<import("react").ReactNode>;
+  title: string;
+  slug: string;
+  published: boolean;
+  publishDate: Date;
+  featuredImage: any;
+  excerpt: string;
+  content: object[];
+  categories: Category[];
+  tags: string[];
+  author: Author;
+  seo: {
+    title: string;
+    description: string;
+    image: {
+      url: string;
+      altText: string;
+    };
+  };
+  isFeatured: boolean;
 }

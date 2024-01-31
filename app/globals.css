@@ -71,6 +71,13 @@ body {
       rgba(207, 213, 222, 1) 100%
     );
   }
+  .image-overlay {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.82) 0%,
+      rgba(255, 255, 255, 0) 70%
+    );
+  }
 
   .tab {
     @apply min-h-full dark:bg-dark-400 bg-light-800 text-light-500 dark:data-[state=active]:bg-dark-300 data-[state=active]:bg-primary-100 data-[state=active]:text-primary-500 !important;

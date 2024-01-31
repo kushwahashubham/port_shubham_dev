@@ -16,6 +16,14 @@ export const navigationList = [
   { name: "contact", index: 6, icon: images.contact },
 ];
 
+export const blogPostsNavigationList = [
+  { name: "home", index: 1, icon: images.home, link: "/" },
+];
+
+export const filterCategories = [
+  { name: "home", index: 1, icon: images.home, link: "/" },
+];
+
 export const themes = [
   { value: "light", label: "Light", icon: "../assets/sun.svg" },
   { value: "dark", label: "Dark", icon: "../assets/moon.svg" },

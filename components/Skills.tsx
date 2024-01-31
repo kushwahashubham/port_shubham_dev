@@ -26,9 +26,9 @@ const Skills = ({
   const [filterWork, setFilterWork] = useState<GetSkillsDataParams[]>([]);
   const [activeFilter, setActiveFilter] = useState<string>("All");
   const [animateCard, setAnimateCard] = useState<{
-    x: number;
+    y: number;
     opacity: number;
-  }>({ x: 0, opacity: 1 });
+  }>({ y: 0, opacity: 1 });
 
   useEffect(() => {
     setExperiences(experience);
@@ -38,15 +38,16 @@ const Skills = ({
 
   const handleWorkFilter = (item: string) => {
     setActiveFilter(item);
-    setAnimateCard({ x: 100, opacity: 0 });
+    setAnimateCard({ y: 100, opacity: 0 });
+    setTimeout(() => {
+      setAnimateCard({ y: 0, opacity: 1 });
 
-    setAnimateCard({ x: 0, opacity: 1 });
-
-    if (item === "All") {
-      setFilterWork(skills);
-    } else {
-      setFilterWork(skills.filter((work) => work.tags.includes(item)));
-    }
+      if (item === "All") {
+        setFilterWork(skills);
+      } else {
+        setFilterWork(skills.filter((work) => work.tags.includes(item)));
+      }
+    }, 500);
   };
 
   return (
@@ -54,7 +55,7 @@ const Skills = ({
       <motion.div
         whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
         transition={{ duration: 0.5 }}
-        className=" flex h-fit min-h-screen w-full flex-1 flex-col items-center justify-center bg-white pt-16 max-lg:h-fit max-xs:pt-[72px] dark:bg-black"
+        className=" flex h-fit min-h-screen w-full flex-1 flex-col items-center justify-start bg-white pt-16 max-lg:h-fit max-xs:pt-[72px] dark:bg-black"
       >
         <h2 className="text-center text-[2.75rem] font-extrabold capitalize text-black max-xs:text-[2rem] xxl:text-[4rem] dark:text-white">
           Skills & Experiences
@@ -87,7 +88,6 @@ const Skills = ({
             {filterWork.map((skill) => (
               <motion.div
                 animate={animateCard}
-                whileInView={{ opacity: [0, 1] }}
                 transition={{ duration: 0.5, delayChildren: 0.5 }}
                 className=" flex-center m-4 flex-col text-center transition-all duration-300 ease-in-out xxl:mx-8 xxl:my-4"
                 key={skill.name}
