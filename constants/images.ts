@@ -22,6 +22,8 @@ import connect from "../public/assets/icons8-connect.svg";
 import eye from "../public/assets/eye.svg";
 import github from "../public/assets/github.svg";
 import pen from "../public/assets/pen-svgrepo-com.svg";
+import email from "../public/assets/email.png";
+import mobile from "../public/assets/mobile.png";
 
 const images = {
   bgWhite,
@@ -48,6 +50,8 @@ const images = {
   eye,
   github,
   pen,
+  email,
+  mobile,
 };
 
 export default images;

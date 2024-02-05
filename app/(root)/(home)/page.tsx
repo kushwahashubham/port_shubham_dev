@@ -1,5 +1,6 @@
 import About from "@/components/About";
 import Blog from "@/components/Blog";
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Skills from "@/components/Skills";
 import Work from "@/components/Work";
@@ -29,6 +30,7 @@ export default async function Home() {
       <Work data={works} />
       <Skills data={skills} experience={experience} />
       <Blog data={posts} />
+      <Footer />
     </main>
   );
 }

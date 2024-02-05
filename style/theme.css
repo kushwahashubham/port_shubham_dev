@@ -173,6 +173,9 @@
   .bold-text {
     @apply text-[1rem] font-extrabold text-left text-black max-xs:text-[0.9rem] xxl:text-[2rem];
   }
+  .head-text {
+    @apply text-[2.75rem] font-extrabold text-center capitalize text-black max-xs:text-[2rem] xxl:text-[4rem];
+  }
 
   .subtle-medium {
     @apply text-[10px] font-medium leading-[13px] !important;
