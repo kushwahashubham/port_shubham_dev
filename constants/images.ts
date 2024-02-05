@@ -21,6 +21,7 @@ import contact from "../public/assets/telephone.svg";
 import connect from "../public/assets/icons8-connect.svg";
 import eye from "../public/assets/eye.svg";
 import github from "../public/assets/github.svg";
+import pen from "../public/assets/pen-svgrepo-com.svg";
 
 const images = {
   bgWhite,
@@ -46,6 +47,7 @@ const images = {
   connect,
   eye,
   github,
+  pen,
 };
 
 export default images;

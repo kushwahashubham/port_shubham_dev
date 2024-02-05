@@ -64,7 +64,7 @@ const Blog = ({ data }: { data: GetPostDataParams }) => {
                               <p className="w-[50%] text-[0.8rem] text-[#E1E3E4] hover:text-white  max-lg:hidden">
                                 {post.excerpt}
                               </p>
-                              <Link href="/" className="">
+                              <Link href={`/blog/${post.slug}`} className="">
                                 <Button className="bg-[#ffffff33] text-[0.9rem] text-white hover:bg-white hover:text-black max-md:text-[0.5rem]">
                                   Read Now
                                 </Button>
@@ -87,7 +87,7 @@ const Blog = ({ data }: { data: GetPostDataParams }) => {
           <Link href="/blog">
             <Button className="bg-white">
               View All Posts
-              <ArrowRightIcon className="ml-2 h-4 w-4" />
+              <ArrowRightIcon className="ml-2 h-4 w-4 motion-safe:animate-right" />
             </Button>
           </Link>
         </div>

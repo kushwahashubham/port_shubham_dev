@@ -32,7 +32,7 @@ export interface GetExperienceDataParams {
 interface Author {
   name: string; // Name of the author.
   bio: string; // Author's biography.
-  avatar: Image; // Author's avatar image.
+  avatar: any; // Author's avatar image.
   socialLinks: string[]; // Array of author's social media links.
 }
 
@@ -55,7 +55,7 @@ export interface GetPostDataParams {
   publishDate: Date;
   featuredImage: any;
   excerpt: string;
-  content: object[];
+  body: any;
   categories: Category[];
   tags: string[];
   author: Author;
@@ -68,4 +68,5 @@ export interface GetPostDataParams {
     };
   };
   isFeatured: boolean;
+  _updatedAt: Date;
 }

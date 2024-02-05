@@ -17,11 +17,8 @@ export const navigationList = [
 ];
 
 export const blogPostsNavigationList = [
-  { name: "home", index: 1, icon: images.home, link: "/" },
-];
-
-export const filterCategories = [
-  { name: "home", index: 1, icon: images.home, link: "/" },
+  { name: "home", index: 1, link: "/" },
+  { name: "blog", index: 2, link: "/blog" },
 ];
 
 export const themes = [

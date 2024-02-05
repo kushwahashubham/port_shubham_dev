@@ -50,9 +50,14 @@ module.exports = {
           "75%": { transform: "translateX(2px)" },
           "100%": { transform: "translateX(0)" },
         },
+        right: {
+          "0%": { transform: "translateX(0)" },
+          "100%": { transform: "translateX(100%)" },
+        },
       },
       animation: {
         wiggle: "wiggle 1s ease-in-out infinite",
+        right: "right 2s ease-in-out infinite",
       },
       boxShadow: {
         "light-100":
@@ -62,10 +67,6 @@ module.exports = {
         "dark-100": "0px 2px 10px 0px rgba(46, 52, 56, 0.10)",
         "dark-200": "2px 0px 20px 0px rgba(39, 36, 36, 0.04)",
       },
-      backgroundImage: {
-        // "header-bg": "url('./public/assets/bgWhite.png')",
-        // "auth-light": "url('/assets/images/auth-light.png')",
-      },
       screens: {
         xs: "450px",
         xxl: "2000px",
@@ -73,5 +74,5 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate")],
+  plugins: [require("tailwindcss-animate"), require("@tailwindcss/typography")],
 };
