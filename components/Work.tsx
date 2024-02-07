@@ -108,7 +108,7 @@ const Work = ({ data }: { data: GetWorkDataParams[] }) => {
                         <Image
                           src={images.eye}
                           alt="eye"
-                          className=" h-[50%] w-[50%] dark:invert"
+                          className=" h-[50%] w-[50%]"
                         />
                       </motion.div>
                     </Link>
@@ -124,7 +124,7 @@ const Work = ({ data }: { data: GetWorkDataParams[] }) => {
                         <Image
                           src={images.github}
                           alt="eye"
-                          className=" h-[50%] w-[50%] dark:invert"
+                          className=" h-[50%] w-[50%]"
                         />
                       </motion.div>
                     </Link>
