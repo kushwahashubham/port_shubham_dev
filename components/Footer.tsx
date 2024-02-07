@@ -52,7 +52,7 @@ const Footer = () => {
         </h2>
 
         <div className=" mx-8 my-16 flex w-[60%] flex-wrap items-center justify-evenly max-md:w-full max-md:px-4">
-          <div className=" mx-0 my-4 flex min-w-[290px] cursor-pointer flex-row items-center justify-start rounded-xl bg-[#fef4f5] p-4 transition-all duration-300 ease-in-out hover:shadow-[0_0_25px_rgba(254,244,245,1)] max-xs:w-full">
+          <div className=" mx-0 my-4 flex min-w-[290px] cursor-pointer flex-row items-center justify-start rounded-xl bg-[#fef4f5] p-4 transition-all duration-300 ease-in-out hover:shadow-[0_0_25px_rgba(254,244,245,1)] max-xs:w-full dark:hover:shadow-[0_0_25px_rgba(39,61,85,1)]">
             <Image
               src={images.email}
               alt="email"
@@ -67,7 +67,7 @@ const Footer = () => {
               hello@micael.com
             </a>
           </div>
-          <div className=" mx-0 my-4 flex min-w-[290px] cursor-pointer flex-row items-center justify-start rounded-xl bg-[#f2f7fb] p-4 transition-all duration-300 ease-in-out hover:shadow-[0_0_25px_rgba(242,247,251,1)] max-xs:w-full">
+          <div className=" mx-0 my-4 flex min-w-[290px] cursor-pointer flex-row items-center justify-start rounded-xl bg-[#f2f7fb] p-4 transition-all duration-300 ease-in-out hover:shadow-[0_0_25px_rgba(242,247,251,1)] max-xs:w-full dark:hover:shadow-[0_0_25px_rgba(39,61,85,1)]">
             <Image
               src={images.mobile}
               alt="phone"
@@ -85,9 +85,9 @@ const Footer = () => {
         </div>
         {!isFormSubmitted ? (
           <div className="flex-center mx-8 my-4 w-[60%] flex-col max-md:mx-0 max-md:my-4 max-md:w-full max-md:px-4">
-            <div className="flex-center mx-0 my-3 w-full cursor-pointer rounded-xl bg-[#f2f7fb] transition-all duration-300 ease-in-out hover:shadow-[0_0_25px_rgba(242,247,251,1)]">
+            <div className="flex-center mx-0 my-3 w-full cursor-pointer rounded-xl bg-[#f2f7fb] transition-all duration-300 ease-in-out hover:shadow-[0_0_25px_rgba(242,247,251,1)] dark:bg-[#273D55] dark:hover:shadow-[0_0_25px_rgba(39,61,85,1)]">
               <input
-                className="p-text w-full rounded-lg border-none bg-[#f2f7fb] p-[0.95rem] outline-none"
+                className="p-text w-full rounded-lg border-none bg-[#f2f7fb] p-[0.95rem] outline-none dark:bg-[#273D55]"
                 type="text"
                 placeholder="Your Name"
                 name="username"
@@ -95,9 +95,9 @@ const Footer = () => {
                 onChange={handleChangeInput}
               />
             </div>
-            <div className="flex-center mx-0 my-3 w-full cursor-pointer rounded-xl bg-[#f2f7fb] transition-all duration-300 ease-in-out hover:shadow-[0_0_25px_rgba(242,247,251,1)]">
+            <div className="flex-center mx-0 my-3 w-full cursor-pointer rounded-xl bg-[#f2f7fb] transition-all duration-300 ease-in-out hover:shadow-[0_0_25px_rgba(242,247,251,1)] dark:bg-[#273D55] dark:hover:shadow-[0_0_25px_rgba(39,61,85,1)]">
               <input
-                className="p-text w-full rounded-lg border-none bg-[#f2f7fb] p-[0.95rem] outline-none"
+                className="p-text w-full rounded-lg border-none bg-[#f2f7fb] p-[0.95rem] outline-none dark:bg-[#273D55]"
                 type="email"
                 placeholder="Your Email"
                 name="email"
@@ -105,9 +105,9 @@ const Footer = () => {
                 onChange={handleChangeInput}
               />
             </div>
-            <div className=" mx-0 my-3 w-full cursor-pointer rounded-xl bg-[#f2f7fb] transition-all duration-300 ease-in-out hover:shadow-[0_0_25px_rgba(242,247,251,1)]">
+            <div className=" mx-0 my-3 w-full cursor-pointer rounded-xl bg-[#f2f7fb] transition-all duration-300 ease-in-out hover:shadow-[0_0_25px_rgba(242,247,251,1)] dark:bg-[#273D55] dark:hover:shadow-[0_0_25px_rgba(39,61,85,1)]">
               <textarea
-                className="p-text h-[170px] w-full rounded-lg border-none bg-[#f2f7fb] p-[0.95rem] outline-none"
+                className="p-text h-[170px] w-full rounded-lg border-none bg-[#f2f7fb] p-[0.95rem] outline-none dark:bg-[#273D55]"
                 placeholder="Your Message"
                 value={message}
                 name="message"
