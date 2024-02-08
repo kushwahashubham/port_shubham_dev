@@ -19,10 +19,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className=" !scroll-smooth">
+      <SpeedInsights />
       <body className={`${inter.className} bg-white dark:bg-black`}>
         <ThemeProvider>{children}</ThemeProvider>
       </body>
-      <SpeedInsights />
     </html>
   );
 }
