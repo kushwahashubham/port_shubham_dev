@@ -97,11 +97,11 @@ const Blog = ({ data }: { data: GetPostDataParams }) => {
           </Link>
         </div>
 
-        <h3 className="h3-bold mt-4 text-[1.4rem] max-lg:text-[1.6rem] max-md:text-[0.9rem] dark:text-white">
+        {/* <h3 className="h3-bold mt-4 text-[1.4rem] max-lg:text-[1.6rem] max-md:text-[0.9rem] dark:text-white">
           Code & Coffee Break
         </h3>
 
-        <div></div>
+        <div></div> */}
       </motion.div>
     </div>
   );
