@@ -6,7 +6,6 @@ import Link from "next/link";
 
 const Posts = async () => {
   const posts: GetPostDataParams[] = await getBlogData();
-  console.log(posts);
   return (
     <div>
       <div className=" dark:dark-bgGrad h-fit w-full flex-1 flex-col bg-[#EDF2F8] pt-16 max-lg:h-fit max-xs:pt-[72px]">
@@ -40,7 +39,7 @@ const Posts = async () => {
                   <h4 className="bold-text mt-4 text-center leading-6 xxl:mt-12 dark:text-white">
                     {post.title}
                   </h4>
-                  <p className="p-text mt-2 text-center dark:text-gray-500">
+                  <p className="p-text mt-2 text-center text-gray-700 dark:text-gray-400">
                     {post.excerpt}
                   </p>
                 </div>

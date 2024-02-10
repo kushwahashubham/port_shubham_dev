@@ -55,9 +55,9 @@ const Work = ({ data }: { data: GetWorkDataParams[] }) => {
                 onClick={() => handleWorkFilter(item)}
                 className={`${
                   activeFilter === item
-                    ? "bg-primary-500 text-white "
+                    ? "bg-primary-500 text-black "
                     : "bg-white text-black dark:bg-[#0D1321] dark:text-white"
-                } flex-center p-text m-2 cursor-pointer rounded-lg  px-4 py-2 font-extrabold  transition-all duration-300 ease-in-out hover:bg-primary-500 hover:text-white xxl:rounded-[0.85rem] xxl:px-8 xxl:py-4 `}
+                } flex-center p-text m-2 cursor-pointer rounded-lg  px-4 py-2 font-extrabold  transition-all duration-300 ease-in-out hover:bg-primary-500 hover:text-black xxl:rounded-[0.85rem] xxl:px-8 xxl:py-4 `}
               >
                 {item}
               </div>
@@ -132,9 +132,9 @@ const Work = ({ data }: { data: GetWorkDataParams[] }) => {
                 </motion.div>
               </div>
               <div className=" flex-center relative w-full flex-col p-2">
-                <h4 className="bold-text mt-4 leading-6 xxl:mt-12 dark:text-white">
+                <h3 className="bold-text mt-4 leading-6 xxl:mt-12 dark:text-white">
                   {work.title}
-                </h4>
+                </h3>
                 <p className="p-text dark:text-white" style={{ marginTop: 10 }}>
                   {work.description}
                 </p>

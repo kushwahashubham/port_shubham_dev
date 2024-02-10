@@ -76,9 +76,9 @@ const Skills = ({
                   onClick={() => handleWorkFilter(item)}
                   className={`${
                     activeFilter === item
-                      ? "bg-primary-500 text-white "
+                      ? "bg-primary-500 text-black "
                       : "bg-[#EDF2F8] text-black dark:bg-[#273D55] dark:text-white"
-                  } flex-center p-text m-2 cursor-pointer rounded-lg  px-4 py-2 font-extrabold  transition-all duration-300 ease-in-out hover:bg-primary-500 hover:text-white xxl:rounded-[0.85rem] xxl:px-8 xxl:py-4 `}
+                  } flex-center p-text m-2 cursor-pointer rounded-lg  px-4 py-2 font-extrabold  transition-all duration-300 ease-in-out hover:bg-primary-500 hover:text-black xxl:rounded-[0.85rem] xxl:px-8 xxl:py-4 `}
                 >
                   {item}
                 </div>
@@ -101,7 +101,9 @@ const Skills = ({
                     className=" h-[50%] w-[50%]"
                   />
                 </div>
-                <p className="p-text mt-2 font-medium xxl:mt-4">{skill.name}</p>
+                <p className="p-text mt-2 font-medium text-gray-700 xxl:mt-4 dark:text-gray-400">
+                  {skill.name}
+                </p>
               </motion.div>
             ))}
           </motion.div>
@@ -130,10 +132,10 @@ const Skills = ({
                         <TooltipProvider>
                           <Tooltip>
                             <TooltipTrigger>
-                              <h4 className="bold-text font-medium dark:invert">
+                              <h3 className="bold-text font-medium text-black dark:invert">
                                 {work.name}
-                              </h4>
-                              <p className="p-text mt-[5px] font-normal text-gray-500">
+                              </h3>
+                              <p className="p-text mt-[5px] font-normal text-gray-700 dark:text-gray-400">
                                 {work.company}
                               </p>
                             </TooltipTrigger>

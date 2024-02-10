@@ -62,7 +62,7 @@ const Footer = () => {
             />
             <a
               href="mailto:hello@micael.com"
-              className="p-text font-medium no-underline"
+              className="p-text font-medium text-black no-underline"
             >
               hello@micael.com
             </a>
@@ -77,7 +77,7 @@ const Footer = () => {
             />
             <a
               href="tel:+1 (123) 456-7890"
-              className="p-text font-medium no-underline"
+              className="p-text font-medium text-black no-underline"
             >
               +1 (123) 456-7890
             </a>
@@ -87,7 +87,7 @@ const Footer = () => {
           <div className="flex-center mx-8 my-4 w-[60%] flex-col max-md:mx-0 max-md:my-4 max-md:w-full max-md:px-4">
             <div className="flex-center mx-0 my-3 w-full cursor-pointer rounded-xl bg-[#f2f7fb] transition-all duration-300 ease-in-out hover:shadow-[0_0_25px_rgba(242,247,251,1)] dark:bg-[#273D55] dark:hover:shadow-[0_0_25px_rgba(39,61,85,1)]">
               <input
-                className="p-text w-full rounded-lg border-none bg-[#f2f7fb] p-[0.95rem] outline-none dark:bg-[#273D55]"
+                className="p-text w-full rounded-lg border-none bg-[#f2f7fb] p-[0.95rem] text-black outline-none placeholder:text-black dark:bg-[#273D55] dark:text-white dark:placeholder:text-white"
                 type="text"
                 placeholder="Your Name"
                 name="username"
@@ -97,7 +97,7 @@ const Footer = () => {
             </div>
             <div className="flex-center mx-0 my-3 w-full cursor-pointer rounded-xl bg-[#f2f7fb] transition-all duration-300 ease-in-out hover:shadow-[0_0_25px_rgba(242,247,251,1)] dark:bg-[#273D55] dark:hover:shadow-[0_0_25px_rgba(39,61,85,1)]">
               <input
-                className="p-text w-full rounded-lg border-none bg-[#f2f7fb] p-[0.95rem] outline-none dark:bg-[#273D55]"
+                className="p-text w-full rounded-lg border-none bg-[#f2f7fb] p-[0.95rem] text-black outline-none placeholder:text-black dark:bg-[#273D55] dark:text-white dark:placeholder:text-white"
                 type="email"
                 placeholder="Your Email"
                 name="email"
@@ -107,7 +107,7 @@ const Footer = () => {
             </div>
             <div className=" mx-0 my-3 w-full cursor-pointer rounded-xl bg-[#f2f7fb] transition-all duration-300 ease-in-out hover:shadow-[0_0_25px_rgba(242,247,251,1)] dark:bg-[#273D55] dark:hover:shadow-[0_0_25px_rgba(39,61,85,1)]">
               <textarea
-                className="p-text h-[170px] w-full rounded-lg border-none bg-[#f2f7fb] p-[0.95rem] outline-none dark:bg-[#273D55]"
+                className="p-text h-[170px] w-full rounded-lg border-none bg-[#f2f7fb] p-[0.95rem] text-black outline-none placeholder:text-black dark:bg-[#273D55] dark:text-white dark:placeholder:text-white"
                 placeholder="Your Message"
                 value={message}
                 name="message"
@@ -116,7 +116,7 @@ const Footer = () => {
             </div>
             <button
               type="button"
-              className="p-text mx-0 mb-0 mt-8 cursor-pointer rounded-xl border-none bg-primary-500 px-8 py-4 font-medium text-white outline-none ease-in-out"
+              className="p-text mx-0 mb-0 mt-8 cursor-pointer rounded-xl border-none bg-primary-500 px-8 py-4 font-medium text-black outline-none ease-in-out"
               onClick={handleSubmit}
             >
               {!loading ? "Send Message" : "Sending..."}

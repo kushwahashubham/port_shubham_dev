@@ -37,10 +37,10 @@ const About = ({ abouts }: { abouts: GetAboutDataParams[] }) => {
                 height={170}
                 className=" h-[170px] w-full rounded-2xl object-cover xxl:h-[320px]"
               />
-              <h2 className="mt-5 text-left text-[1rem] font-extrabold text-black max-xs:text-[0.9rem] xxl:text-[2rem]">
+              <h2 className="mt-5 text-left text-[1rem] font-extrabold text-black max-xs:text-[0.9rem] xxl:text-[2rem] dark:text-white">
                 {about.title}
               </h2>
-              <p className=" mt-2.5 text-left text-[0.8rem] leading-6 text-gray-500 xxl:text-[1.75]">
+              <p className=" mt-2.5 text-left text-[0.8rem] leading-6 text-gray-400 xxl:text-[1.75]">
                 {about.description}
               </p>
             </motion.div>

@@ -29,10 +29,14 @@ const Blog = ({ data }: { data: GetPostDataParams }) => {
         className=" dark:dark-bgGrad flex h-fit w-full flex-1 flex-col items-center justify-start bg-[#EDF2F8] pt-16 max-xs:pt-[72px]"
       >
         <h2 className="text-center text-[2.75rem] font-extrabold capitalize text-black max-xs:text-[2rem] xxl:text-[4rem] dark:text-white">
-          Blogs & Updates
+          Building, Reading, Exploring
         </h2>
 
-        <div className=" mt-12 flex w-full flex-col">
+        <h3 className="h3-bold mt-8 text-[1.4rem] max-lg:text-[1.6rem] max-md:text-[0.9rem] dark:text-white">
+          Featured Posts
+        </h3>
+
+        <div className=" mt-4 flex w-full flex-col">
           <div className=" flex w-full flex-1 items-center justify-center">
             <Carousel
               plugins={[plugin.current]}
@@ -58,9 +62,9 @@ const Blog = ({ data }: { data: GetPostDataParams }) => {
                               className=" h-full w-full rounded-lg object-cover"
                             />
                             <div className=" image-overlay absolute left-0 flex h-full w-full flex-col items-start justify-center gap-4 rounded-lg p-4">
-                              <h3 className="w-[50%] text-[1.2rem] text-white max-lg:text-[1.4rem] max-md:text-[0.7rem]">
+                              <h4 className="w-[50%] text-[1.2rem] text-white max-lg:text-[1.4rem] max-md:text-[0.7rem]">
                                 {post.title}
-                              </h3>
+                              </h4>
                               <p className="w-[50%] text-[0.8rem] text-[#E1E3E4] hover:text-white  max-lg:hidden">
                                 {post.excerpt}
                               </p>
@@ -83,6 +87,7 @@ const Blog = ({ data }: { data: GetPostDataParams }) => {
           </div>
           <div className=" flex flex-1 flex-col items-start justify-start max-[900px]:ml-16  max-[900px]:mt-8"></div>
         </div>
+
         <div className="my-8">
           <Link href="/blog">
             <Button className="bg-white">
@@ -91,6 +96,12 @@ const Blog = ({ data }: { data: GetPostDataParams }) => {
             </Button>
           </Link>
         </div>
+
+        <h3 className="h3-bold mt-4 text-[1.4rem] max-lg:text-[1.6rem] max-md:text-[0.9rem] dark:text-white">
+          Code & Coffee Break
+        </h3>
+
+        <div></div>
       </motion.div>
     </div>
   );

@@ -34,7 +34,7 @@ const page = async ({ params }: Params) => {
         />
         <h1 className="h1-bold text-black dark:invert">{content.title}</h1>
         <div className="text-center dark:invert">
-          <p className="p-text">
+          <p className="p-text text-gray-700">
             Published:
             <span> {new Date(content?.publishDate).toDateString()} | </span>
             Updated:
@@ -59,7 +59,7 @@ const page = async ({ params }: Params) => {
             />
           </div>
           <div className="flex-center dark:invert">
-            <p className="p-text text-center">
+            <p className="p-text text-center text-gray-700">
               {author.name} | {author.bio}
             </p>
           </div>
