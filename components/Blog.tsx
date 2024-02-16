@@ -13,11 +13,21 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import { GetPostDataParams } from "@/lib/actions/shared.types";
+import {
+  GetPostDataParams,
+  GetUpdateDataParams,
+} from "@/lib/actions/shared.types";
 import Link from "next/link";
 import { Button } from "./ui/button";
+import Updates from "./Updates";
 
-const Blog = ({ data }: { data: GetPostDataParams }) => {
+const Blog = ({
+  data,
+  updates,
+}: {
+  data: GetPostDataParams;
+  updates: GetUpdateDataParams[];
+}) => {
   const plugin = React.useRef(
     Autoplay({ delay: 2000, stopOnInteraction: true })
   );
@@ -101,7 +111,9 @@ const Blog = ({ data }: { data: GetPostDataParams }) => {
           Code & Coffee Break
         </h3>
 
-        <div></div>
+        <div className="my-8 flex w-full items-center justify-center">
+          <Updates updates={updates} />
+        </div>
       </motion.div>
     </div>
   );

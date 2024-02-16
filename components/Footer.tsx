@@ -45,7 +45,7 @@ const Footer = () => {
       <motion.div
         whileInView={{ y: [100, 50, 0], opacity: [0, 0, 1] }}
         transition={{ duration: 0.5 }}
-        className=" flex h-fit min-h-screen w-full flex-1 flex-col items-center justify-start bg-white pt-16 max-lg:h-fit max-xs:pt-[72px] dark:bg-black"
+        className=" flex h-fit w-full flex-1 flex-col items-center justify-start bg-white pt-16 max-lg:h-fit max-xs:pt-[72px] dark:bg-black"
       >
         <h2 className="text-center text-[2.75rem] font-extrabold capitalize text-black max-xs:text-[2rem] xxl:text-[4rem] dark:text-white">
           Take a coffee & chat with me

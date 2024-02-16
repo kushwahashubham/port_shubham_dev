@@ -7,6 +7,7 @@ import Work from "@/components/Work";
 import { getAboutData } from "@/lib/actions/about.action";
 import { getFeaturedPostData } from "@/lib/actions/blog.action";
 import { getExperiencesData, getSkillsData } from "@/lib/actions/skills.action";
+import { getUpdateData } from "@/lib/actions/update.action";
 import { getWorkData } from "@/lib/actions/work.action";
 import { Metadata } from "next";
 
@@ -22,6 +23,7 @@ export default async function Home() {
   const skills = await getSkillsData();
   const experience = await getExperiencesData();
   const posts = await getFeaturedPostData();
+  const update = await getUpdateData();
 
   return (
     <main>
@@ -29,7 +31,7 @@ export default async function Home() {
       <About abouts={abouts} />
       <Work data={works} />
       <Skills data={skills} experience={experience} />
-      <Blog data={posts} />
+      <Blog data={posts} updates={update} />
       <Footer />
     </main>
   );

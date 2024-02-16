@@ -70,3 +70,19 @@ export interface GetPostDataParams {
   isFeatured: boolean;
   _updatedAt: Date;
 }
+
+export interface GetUpdateDataParams {
+  map(
+    arg0: (item: any, index: any) => import("react").JSX.Element
+  ): import("react").ReactNode | Iterable<import("react").ReactNode>;
+  title: string;
+  featuredImage: any;
+  excerpt: string;
+  category: string;
+  tags: string[];
+  date: string;
+  sliderImage: any[];
+  technology: string[];
+  description: string;
+  postLink: string;
+}

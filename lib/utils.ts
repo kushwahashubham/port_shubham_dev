@@ -12,3 +12,26 @@ export function flatten(nestedList: string[][]): string[] {
   }
   return flatList;
 }
+
+export function formatDate(dateString: string): string {
+  // Parse the date string into a Date object
+  const date = new Date(dateString);
+
+  // Check if the date is valid
+  if (isNaN(date.getTime())) {
+    throw new Error("Invalid date format");
+  }
+
+  // Get the day, month, and year
+  const day = date.getDate();
+  const month = date.toLocaleString("en-US", { month: "long" });
+  const year = date.getFullYear();
+
+  // Return the formatted date string
+  return `${day} ${month}, ${year}`;
+}
+
+// Example usage
+const dateString = "2024-01-24";
+const formattedDate = formatDate(dateString);
+console.log(formattedDate); // Output: 24 January, 2024
