@@ -4,67 +4,12 @@ import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
 import ImageSwiper from "./ImageSwiper";
 import { Button } from "./ui/button";
 import { GetUpdateDataParams } from "@/lib/actions/shared.types";
 import { formatDate } from "@/lib/utils";
 import { urlForImage } from "@/sanity/lib/image";
-
-// const list = [
-//   {
-//     date: "12 January,2024",
-//     category: "Currently Reading",
-//     title: "Why Bharat Matters",
-//     excerpt:
-//       "This is book is authored by Dr. S.Jaishanker, External Affiers Minister of India.",
-//     tags: ["book", "book spotlight", "book review"],
-//   },
-//   {
-//     date: "10 February,2024",
-//     category: "Geopolitics Focus",
-//     title: "Why Bharat Matters",
-//     excerpt:
-//       "This is book is authored by Dr. S.Jaishanker, External Affiers Minister of India.",
-//     tags: [
-//       "world politics",
-//       "Geopolitics Focus",
-//       "geoeconomics",
-//       "Indian Diplomacy",
-//     ],
-//   },
-//   {
-//     date: "14 January,2024",
-//     category: "Currently Reading",
-//     title: "All Religions Are Not The Same",
-//     excerpt:
-//       "This is book is authored by Sanjay Dixit, a prominent author of India.",
-//     tags: ["book", "book spotlight", "book review"],
-//   },
-//   {
-//     date: "28 January,2024",
-//     category: "Project Spotlight",
-//     title: "A Custom portfolio website for me",
-//     excerpt:
-//       "This project is a custom portfolio website for me, it includes all neccessary elements of a developer's site.",
-//     tags: ["work", "project spotlight", "code"],
-//   },
-//   {
-//     date: "19 January,2024",
-//     category: "Project Spotlight",
-//     title: "A new look to StackOverflow site",
-//     excerpt:
-//       "This project gives a look a new modern to StackOverflow, make it to work with new generative AI.",
-//     tags: ["work", "project spotlight", "code"],
-//   },
-// ];
 
 const Updates = ({ updates }: { updates: GetUpdateDataParams[] }) => {
   const [update, setUpdate] = useState<GetUpdateDataParams[]>([]);
@@ -75,86 +20,6 @@ const Updates = ({ updates }: { updates: GetUpdateDataParams[] }) => {
 
   return (
     <div className=" mx-4 flex flex-row max-lg:flex-col">
-      <div className="flex flex-col flex-wrap items-center justify-start gap-8 rounded-l-lg border border-r-0 border-transparent bg-white p-4 max-lg:flex-row max-lg:justify-center max-lg:rounded-b-none max-lg:rounded-t-lg  dark:bg-[#0D1321]">
-        <p className="h3-bold w-full text-center text-black max-lg:text-[1.4rem] max-md:text-[0.7rem] dark:text-white">
-          Filter Controls
-        </p>
-        <Select>
-          <SelectTrigger className="w-[180px] text-black dark:text-white">
-            <SelectValue placeholder="Category" />
-          </SelectTrigger>
-          <SelectContent className=" max-h-[200px] bg-light-900 text-black dark:border-dark-400 dark:bg-dark-300 dark:text-white">
-            <SelectItem
-              value="light"
-              className="cursor-pointer focus:bg-light-800 dark:focus:bg-dark-400"
-            >
-              Light
-            </SelectItem>
-            <SelectItem
-              value="dark"
-              className="cursor-pointer focus:bg-light-800 dark:focus:bg-dark-400"
-            >
-              Dark
-            </SelectItem>
-            <SelectItem
-              value="system"
-              className="cursor-pointer focus:bg-light-800 dark:focus:bg-dark-400"
-            >
-              System
-            </SelectItem>
-          </SelectContent>
-        </Select>
-        <Select>
-          <SelectTrigger className="w-[180px] text-black dark:text-white">
-            <SelectValue placeholder="Tags" />
-          </SelectTrigger>
-          <SelectContent className=" max-h-[200px] bg-light-900 text-black dark:border-dark-400 dark:bg-dark-300 dark:text-white">
-            <SelectItem
-              value="light"
-              className="cursor-pointer focus:bg-light-800 dark:focus:bg-dark-400"
-            >
-              Light
-            </SelectItem>
-            <SelectItem
-              value="dark"
-              className="cursor-pointer focus:bg-light-800 dark:focus:bg-dark-400"
-            >
-              Dark
-            </SelectItem>
-            <SelectItem
-              value="system"
-              className="cursor-pointer focus:bg-light-800 dark:focus:bg-dark-400"
-            >
-              System
-            </SelectItem>
-          </SelectContent>
-        </Select>
-        <Select>
-          <SelectTrigger className="w-[180px] text-black dark:text-white">
-            <SelectValue placeholder="Date" />
-          </SelectTrigger>
-          <SelectContent className=" max-h-[200px] bg-light-900 text-black dark:border-dark-400 dark:bg-dark-300 dark:text-white">
-            <SelectItem
-              value="light"
-              className="cursor-pointer focus:bg-light-800 dark:focus:bg-dark-400"
-            >
-              Light
-            </SelectItem>
-            <SelectItem
-              value="dark"
-              className="cursor-pointer focus:bg-light-800 dark:focus:bg-dark-400"
-            >
-              Dark
-            </SelectItem>
-            <SelectItem
-              value="system"
-              className="cursor-pointer focus:bg-light-800 dark:focus:bg-dark-400"
-            >
-              System
-            </SelectItem>
-          </SelectContent>
-        </Select>
-      </div>
       <ScrollArea className=" h-[500px] max-w-[850px] overflow-auto rounded-r-lg border border-l-0 border-transparent bg-white p-4 max-lg:h-[800px] max-lg:rounded-b-lg  max-lg:rounded-t-none max-lg:border-t-0 dark:bg-[#0D1321]">
         {update.map((item, index) => (
           <Dialog key={index}>
@@ -185,7 +50,7 @@ const Updates = ({ updates }: { updates: GetUpdateDataParams[] }) => {
                                 ? " bg-green-100 capitalize"
                                 : item.category === "Geopolitics Focus"
                                   ? " bg-orange-100 capitalize"
-                                  : "capitalize"
+                                  : " bg-violet-200 capitalize"
                           }
                         >
                           {item.category}
