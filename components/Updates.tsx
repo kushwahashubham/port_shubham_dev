@@ -148,7 +148,7 @@ const Updates = ({ updates }: { updates: GetUpdateDataParams[] }) => {
                   ))}
                 </div>
                 {item.postLink && (
-                  <Button className="mt-2 w-full">Know More</Button>
+                  <Button className="mt-2 w-full dark:invert">Know More</Button>
                 )}
               </div>
             </DialogContent>
