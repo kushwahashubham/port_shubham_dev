@@ -107,17 +107,13 @@ const Blog = ({
           </Link>
         </div>
 
-        {/* <h3 className="h3-bold mt-4 text-[1.4rem] max-lg:text-[1.6rem] max-md:text-[0.9rem] dark:text-white">
+        <h3 className="h3-bold mt-4 text-[1.4rem] max-lg:text-[1.6rem] max-md:text-[0.9rem] dark:text-white">
           Code & Coffee Break
         </h3>
 
-<<<<<<< HEAD
-        <div></div> */}
-=======
         <div className="my-8 flex w-full items-center justify-center">
           <Updates updates={updates} />
         </div>
->>>>>>> 9e6b377bbc486b335566d40a80bf893e3dd7d230
       </motion.div>
     </div>
   );
