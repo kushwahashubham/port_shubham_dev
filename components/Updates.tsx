@@ -148,7 +148,7 @@ const Updates = ({ updates }: { updates: GetUpdateDataParams[] }) => {
                   ))}
                 </div>
                 {item.postLink && (
-                  <Button className="mt-2 w-full bg-primary-500 text-black">
+                  <Button className="mt-6 w-full bg-primary-500 text-black">
                     Know More
                   </Button>
                 )}
