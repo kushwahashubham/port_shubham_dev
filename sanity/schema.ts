@@ -10,6 +10,7 @@ import post from "./schemas/post";
 import author from "./schemas/author";
 import category from "./schemas/category";
 import tags from "./schemas/tags";
+import update from "./schemas/update";
 
 export const schema: { types: SchemaTypeDefinition[] } = {
   types: [
@@ -24,5 +25,6 @@ export const schema: { types: SchemaTypeDefinition[] } = {
     experiences,
     contact,
     tags,
+    update,
   ],
 };
