@@ -30,8 +30,3 @@ export function formatDate(dateString: string): string {
   // Return the formatted date string
   return `${day} ${month}, ${year}`;
 }
-
-// Example usage
-const dateString = "2024-01-24";
-const formattedDate = formatDate(dateString);
-console.log(formattedDate); // Output: 24 January, 2024

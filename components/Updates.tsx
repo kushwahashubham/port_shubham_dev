@@ -20,7 +20,7 @@ const Updates = ({ updates }: { updates: GetUpdateDataParams[] }) => {
 
   return (
     <div className=" mx-4 flex flex-row max-lg:flex-col">
-      <ScrollArea className=" h-[500px] max-w-[850px] overflow-auto rounded-r-lg border border-l-0 border-transparent bg-white p-4 max-lg:h-[800px] max-lg:rounded-b-lg  max-lg:rounded-t-none max-lg:border-t-0 dark:bg-[#0D1321]">
+      <ScrollArea className=" h-[500px] max-w-[850px] overflow-auto rounded-lg border  bg-white p-4 max-lg:h-[800px] dark:bg-[#0D1321]">
         {update.map((item, index) => (
           <Dialog key={index}>
             <DialogTrigger>
@@ -107,9 +107,9 @@ const Updates = ({ updates }: { updates: GetUpdateDataParams[] }) => {
                   {item.technology &&
                     item.technology.map((tech, index) => (
                       <Badge
-                        variant="outline"
+                        variant="secondary"
                         key={index}
-                        className="p-text mr-1 bg-gray-100 capitalize"
+                        className="p-text mr-1 bg-gray-200 capitalize hover:bg-gray-100"
                       >
                         {tech}
                       </Badge>
@@ -127,7 +127,7 @@ const Updates = ({ updates }: { updates: GetUpdateDataParams[] }) => {
                           ? " bg-green-100 capitalize"
                           : item.category === "Geopolitics Focus"
                             ? " bg-orange-100 capitalize"
-                            : "capitalize"
+                            : "bg-violet-200 capitalize"
                     }
                   >
                     {item.category}
