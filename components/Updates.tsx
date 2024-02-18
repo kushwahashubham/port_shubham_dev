@@ -90,7 +90,7 @@ const Updates = ({ updates }: { updates: GetUpdateDataParams[] }) => {
                 </div>
                 <div className="m-4">
                   <h1 className="base-bold capitalize text-black dark:text-white">
-                    Just a Test Title heading!
+                    {item.title}
                   </h1>
                   <p className="body-regular pt-1 text-justify text-black/50 dark:text-white/85">
                     {item.description}

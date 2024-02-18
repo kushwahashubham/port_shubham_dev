@@ -18,8 +18,11 @@ export interface GetSkillsDataParams {
 export interface GetWorkDataParams {
   title: string;
   description: string;
+  excerpt: string;
   tags: string[];
   imageUrl: any;
+  technology: string[];
+  sliderImage: any[];
   projectLink: string | null;
   codeLink: string | null;
 }

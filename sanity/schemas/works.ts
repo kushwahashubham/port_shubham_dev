@@ -15,6 +15,11 @@ const work = {
       type: "string",
     },
     {
+      name: "excerpt",
+      title: "Excerpt",
+      type: "string",
+    },
+    {
       name: "projectLink",
       title: "Project Link",
       type: "string",
@@ -31,6 +36,35 @@ const work = {
       options: {
         hotspot: true,
       },
+    },
+
+    {
+      name: "technology",
+      title: "Technology",
+      type: "array",
+      of: [
+        {
+          name: "tech",
+          title: "Tech",
+          type: "string",
+        },
+      ],
+    },
+
+    {
+      name: "sliderImage",
+      title: "Slider Image",
+      type: "array",
+      of: [
+        {
+          name: "image",
+          title: "Image",
+          type: "image",
+          options: {
+            hotspot: true,
+          },
+        },
+      ],
     },
 
     {
