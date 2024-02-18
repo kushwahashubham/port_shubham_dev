@@ -20,7 +20,7 @@ const Updates = ({ updates }: { updates: GetUpdateDataParams[] }) => {
 
   return (
     <div className=" mx-4 flex flex-row max-lg:flex-col">
-      <ScrollArea className=" h-[500px] max-w-[850px] overflow-auto rounded-lg border  bg-white p-4 max-lg:h-[800px] dark:bg-[#0D1321]">
+      <ScrollArea className=" h-[500px] max-w-[850px] overflow-auto rounded-lg border border-transparent bg-white p-4 max-lg:h-[800px] dark:bg-[#0D1321]">
         {update.map((item, index) => (
           <Dialog key={index}>
             <DialogTrigger>
