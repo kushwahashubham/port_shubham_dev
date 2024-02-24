@@ -72,7 +72,7 @@ const Skills = ({
                 "All",
               ].map((item, index) => (
                 <div
-                  key={index}
+                  key={index + item}
                   onClick={() => handleWorkFilter(item)}
                   className={`${
                     activeFilter === item
@@ -85,12 +85,12 @@ const Skills = ({
               ))}
             </div>
 
-            {filterWork.map((skill) => (
+            {filterWork.map((skill, index) => (
               <motion.div
                 animate={animateCard}
                 transition={{ duration: 0.5, delayChildren: 0.5 }}
                 className=" flex-center m-4 flex-col text-center transition-all duration-300 ease-in-out xxl:mx-8 xxl:my-4"
-                key={skill.name}
+                key={index + skill.name}
               >
                 <div className="flex-center h-[90px] w-[90px] rounded-full bg-[#EDF2F8] hover:shadow-[0_0_25px_rgba(0,0,0,0.2)] max-xs:h-[70px] max-xs:w-[70px] xxl:h-[150px] xxl:w-[150px] dark:invert">
                   <Image
@@ -108,10 +108,10 @@ const Skills = ({
             ))}
           </motion.div>
           <div className=" flex flex-1 flex-col items-start justify-start max-[900px]:ml-16  max-[900px]:mt-8">
-            {experiences.map((experience) => (
+            {experiences.map((experience, index) => (
               <motion.div
                 className=" mx-0 my-4 flex w-full flex-row items-start justify-start"
-                key={experience.year}
+                key={index}
               >
                 <div className=" mr-12 max-xs:mr-4">
                   <p className="bold-text font-extrabold text-primary-500">
@@ -119,7 +119,7 @@ const Skills = ({
                   </p>
                 </div>
                 <motion.div className=" flex-1">
-                  {experience.works.map((work) => (
+                  {experience.works.map((work, index) => (
                     <>
                       <motion.div
                         whileInView={{ opacity: [0, 1] }}
@@ -127,7 +127,7 @@ const Skills = ({
                         className=" mb-4 flex cursor-pointer flex-col items-start justify-start"
                         data-tip
                         data-for={work.name}
-                        key={work.name}
+                        key={work._key}
                       >
                         <TooltipProvider>
                           <Tooltip>
