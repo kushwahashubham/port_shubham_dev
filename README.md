@@ -1,4 +1,6 @@
-This repository contains the source code for Shubham Kushwaha's personal portfolio website.
+# This repository contains the source code for Shubham Kushwaha's personal portfolio website.
+
+## Click the below image to view the embeded video of the website.
 
 [![Watch the video](https://i.postimg.cc/dQfhSKxb/Screenshot-129.png)](https://1drv.ms/v/s!AicjmX6oFuiTgTL7KZFdRl1SfeRd?e=mSGWs2)
 
