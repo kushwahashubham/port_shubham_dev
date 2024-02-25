@@ -2,7 +2,7 @@
 
 ## Click the below image to view the embeded video of the website.
 
-<a href="https://1drv.ms/v/s!AicjmX6oFuiTgTL7KZFdRl1SfeRd?e=mSGWs2" target="_blank">
+<a href="https://1drv.ms/v/s!AicjmX6oFuiTgTL7KZFdRl1SfeRd?e=mSGWs2" target="_blank" rel="noopener noreferrer">
     <img src="https://i.postimg.cc/dQfhSKxb/Screenshot-129.png" alt="Watch the video" />
 </a>
 
