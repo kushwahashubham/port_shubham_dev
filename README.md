@@ -2,7 +2,9 @@
 
 ## Click the below image to view the embeded video of the website.
 
-[![Watch the video](https://i.postimg.cc/dQfhSKxb/Screenshot-129.png)](https://1drv.ms/v/s!AicjmX6oFuiTgTL7KZFdRl1SfeRd?e=mSGWs2)
+<a href="https://1drv.ms/v/s!AicjmX6oFuiTgTL7KZFdRl1SfeRd?e=mSGWs2" target="_blank">
+    <img src="https://i.postimg.cc/dQfhSKxb/Screenshot-129.png" alt="Watch the video" />
+</a>
 
 
 
