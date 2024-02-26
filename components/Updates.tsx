@@ -23,10 +23,10 @@ const Updates = ({ updates }: { updates: GetUpdateDataParams[] }) => {
       <ScrollArea className=" h-[500px] max-w-[850px] overflow-auto rounded-lg border border-transparent bg-white p-4 max-lg:h-[800px] dark:bg-[#0D1321]">
         {update.map((item, index) => (
           <Dialog key={index}>
-            <DialogTrigger>
+            <DialogTrigger className="m-3">
               <Card
                 key={index}
-                className="dark:dark-bgGrad m-3 cursor-pointer rounded-lg border border-transparent bg-white transition-all duration-300 ease-in-out hover:shadow-[0_0_10px_rgba(0,0,0,0.2)] dark:hover:shadow-[0_0_12px_rgba(255,255,255,0.8)]"
+                className="dark:dark-bgGrad cursor-pointer rounded-lg border border-transparent bg-white transition-all duration-300 ease-in-out hover:shadow-[0_0_10px_rgba(0,0,0,0.2)] dark:hover:shadow-[0_0_12px_rgba(255,255,255,0.8)]"
               >
                 <CardContent className="p-0">
                   <div className="flex flex-row max-lg:flex-col">

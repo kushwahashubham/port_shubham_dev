@@ -76,9 +76,9 @@ const Work = ({ data }: { data: GetWorkDataParams[] }) => {
         >
           {filterWork.map((work, index) => (
             <Dialog key={index}>
-              <DialogTrigger>
+              <DialogTrigger className="m-8 max-xs:m-4">
                 <div
-                  className=" flex-center m-8 w-[270px] cursor-pointer flex-col rounded-lg bg-white p-4 text-black transition-all duration-300 ease-in-out hover:shadow-[0_0_25px_rgba(0,0,0,0.2)] max-xs:m-4 max-xs:w-fit xxl:w-[470px] xxl:rounded-xl xxl:p-5 dark:bg-[#0D1321] dark:hover:shadow-[0_0_25px_rgba(255,255,255,0.2)]
+                  className=" flex-center w-[270px] cursor-pointer flex-col rounded-lg bg-white p-4 text-black transition-all duration-300 ease-in-out hover:shadow-[0_0_25px_rgba(0,0,0,0.2)] max-xs:w-fit xxl:w-[470px] xxl:rounded-xl xxl:p-5 dark:bg-[#0D1321] dark:hover:shadow-[0_0_25px_rgba(255,255,255,0.2)]
               "
                   key={index}
                 >
