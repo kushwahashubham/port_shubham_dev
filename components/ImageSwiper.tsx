@@ -37,7 +37,7 @@ const ImageSwiper = ({ images }: { images: any[] }) => {
               src={urlForImage(image)}
               alt={`image-${index}`}
               fill={true}
-              className="block h-full w-full object-cover"
+              className="block h-full w-full object-contain"
             />
           </SwiperSlide>
         ))}

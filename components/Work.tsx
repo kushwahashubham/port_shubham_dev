@@ -86,8 +86,7 @@ const Work = ({ data }: { data: GetWorkDataParams[] }) => {
                     <Image
                       src={urlForImage(work.imageUrl)}
                       alt={work.title}
-                      width={190}
-                      height={170}
+                      fill={true}
                       className=" h-full w-full rounded-lg object-cover"
                     />
                     <motion.div
