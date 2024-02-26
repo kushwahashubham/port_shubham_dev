@@ -1,36 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# This repository contains the source code for Shubham Kushwaha's personal portfolio website.
 
-## Getting Started
+## Click the below image to view the embeded video of the website.
 
-First, run the development server:
+<a href="https://1drv.ms/v/s!AicjmX6oFuiTgTL7KZFdRl1SfeRd?e=mSGWs2" target="_blank" rel="noopener noreferrer">
+    <img src="https://i.postimg.cc/dQfhSKxb/Screenshot-129.png" alt="Watch the video" />
+</a>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<h1>About Me 🤵🏻 :</h1>
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Shubham Kushwaha
+- **Occupation:** Web Developer
+- **Location:** Varanasi, India
+- **Website:** [Shubham's Portfolio Website](https://dev-shubham-one.vercel.app)
 
-## Learn More
+## Technologies Used ⚙️
+- [Next.js](https://nextjs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [ShadCN](https://ui.shadcn.com/)
+- [Sanity CMS](https://www.sanity.io/)
+- [Framer Motion](https://www.framer.com/motion/)
 
-To learn more about Next.js, take a look at the following resources:
+## Features 🪶
+- About section with a short bio and picture
+- Projects section showcasing work experience with links and descriptions
+- Contact form for inquiries
+- Responsive design for optimal viewing on all devices
+- Blog section featuring posts on web development, geopolitics, and books
+- The website provide both light and dark mode versions.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
