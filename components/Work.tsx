@@ -204,14 +204,18 @@ const Work = ({ data }: { data: GetWorkDataParams[] }) => {
                     ))}
                   </div>
                   {work.projectLink && (
-                    <Link href={work.projectLink}>
+                    <Link
+                      href={work.projectLink}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <Button className="mt-6 w-full bg-primary-500 text-black">
                         Visit Site
                       </Button>
                     </Link>
                   )}
                   {work.codeLink && (
-                    <Link href={work.codeLink}>
+                    <Link href={work.codeLink} target="_blank" rel="noreferrer">
                       <Button className="mt-6 w-full bg-green-500 text-black">
                         Github
                       </Button>
