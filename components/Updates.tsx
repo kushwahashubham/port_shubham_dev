@@ -12,16 +12,20 @@ import { formatDate } from "@/lib/utils";
 import { urlForImage } from "@/sanity/lib/image";
 
 const Updates = ({ updates }: { updates: GetUpdateDataParams[] }) => {
-  const [update, setUpdate] = useState<GetUpdateDataParams[]>([]);
+  const [sortedUpdates, setSortedUpdates] = useState<GetUpdateDataParams[]>([]);
 
   useEffect(() => {
-    setUpdate(updates);
+    // Sort updates by date from latest to oldest
+    const sorted = [...updates].sort((a, b) =>
+      new Date(b.date) > new Date(a.date) ? 1 : -1
+    );
+    setSortedUpdates(sorted);
   }, [updates]);
 
   return (
     <div className=" mx-4 flex flex-row max-lg:flex-col">
       <ScrollArea className=" h-[500px] max-w-[850px] overflow-auto rounded-lg border border-transparent bg-white p-4 max-lg:h-[800px] dark:bg-[#0D1321]">
-        {update.map((item, index) => (
+        {sortedUpdates.map((item, index) => (
           <Dialog key={index}>
             <DialogTrigger className="m-3">
               <Card
