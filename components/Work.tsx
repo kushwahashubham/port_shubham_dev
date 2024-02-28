@@ -141,11 +141,11 @@ const Work = ({ data }: { data: GetWorkDataParams[] }) => {
                     </motion.div>
                   </div>
                   <div className=" flex-center relative w-full flex-col p-2">
-                    <h3 className="bold-text mt-4 leading-6 xxl:mt-12 dark:text-white">
+                    <h3 className="bold-text mt-4 text-center leading-6 xxl:mt-12 dark:text-white">
                       {work.title}
                     </h3>
                     <p
-                      className="p-text dark:text-white"
+                      className="p-text text-center dark:text-white"
                       style={{ marginTop: 10 }}
                     >
                       {work.excerpt}
