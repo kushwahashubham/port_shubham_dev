@@ -61,10 +61,10 @@ const Footer = () => {
               className=" mx-[0.7rem] my-0"
             />
             <a
-              href="mailto:hello@micael.com"
+              href="mailto:forshubham.service@gmail.com"
               className="p-text font-medium text-black no-underline"
             >
-              hello@micael.com
+              forshubham.service@gmail.com
             </a>
           </div>
           <div className=" mx-0 my-4 flex min-w-[290px] cursor-pointer flex-row items-center justify-start rounded-xl bg-[#f2f7fb] p-4 transition-all duration-300 ease-in-out hover:shadow-[0_0_25px_rgba(242,247,251,1)] max-xs:w-full dark:hover:shadow-[0_0_25px_rgba(39,61,85,1)]">
@@ -76,10 +76,10 @@ const Footer = () => {
               className=" mx-[0.7rem] my-0"
             />
             <a
-              href="tel:+1 (123) 456-7890"
+              href="tel:+91 8953213297"
               className="p-text font-medium text-black no-underline"
             >
-              +1 (123) 456-7890
+              +91 8953213297
             </a>
           </div>
         </div>

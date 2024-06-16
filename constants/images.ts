@@ -24,10 +24,16 @@ import github from "../public/assets/github.svg";
 import pen from "../public/assets/pen-svgrepo-com.svg";
 import email from "../public/assets/email.png";
 import mobile from "../public/assets/mobile.png";
+import mongodb from "../public/assets/mongodb.png";
+import nextjs from "../public/assets/nextjs.png";
+import tailwind from "../public/assets/tailwind-css.png";
 
 const images = {
   bgWhite,
   hamburger,
+  mongodb,
+  nextjs,
+  tailwind,
   HeaderImg,
   circle,
   flutter,

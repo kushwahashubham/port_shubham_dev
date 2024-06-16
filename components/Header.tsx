@@ -47,7 +47,7 @@ const Header = () => {
               Web Developer
             </p>
             <p className="small-medium uppercase text-slate-500 dark:text-white">
-              Freelancer
+              Digital Marketing Specialist
             </p>
           </div>
         </div>
@@ -79,7 +79,7 @@ const Header = () => {
         whileInView={scaleVariants.whileInView}
         className="ml-4 flex h-full flex-[0.75] flex-col items-start justify-evenly max-ds:ml-0 max-ds:w-full max-ds:flex-row max-ds:flex-wrap"
       >
-        {[images.flutter, images.sass, images.redux].map((item, index) => (
+        {[images.tailwind, images.nextjs, images.mongodb].map((item, index) => (
           <div
             key={`circle-${index}`}
             className=" flex-center h-[100px] w-[100px] rounded-full bg-white shadow-[0px_0px_20px_rgba(0,0,0,0.1)] max-ds:m-4 dark:bg-[#0D1321] [&:nth-child(1)]:h-[100px] [&:nth-child(1)]:w-[100px] xxl:[&:nth-child(1)]:h-[200px] xxl:[&:nth-child(1)]:w-[200px] [&:nth-child(2)]:m-[1.75rem] [&:nth-child(2)]:h-[150px] [&:nth-child(2)]:w-[150px] xxl:[&:nth-child(2)]:h-[400px] xxl:[&:nth-child(2)]:w-[400px] [&:nth-child(3)]:h-[70px] [&:nth-child(3)]:w-[70px] xxl:[&:nth-child(3)]:h-[170px] xxl:[&:nth-child(3)]:w-[170px]"

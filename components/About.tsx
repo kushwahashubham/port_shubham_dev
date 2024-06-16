@@ -16,9 +16,9 @@ const About = ({ abouts }: { abouts: GetAboutDataParams[] }) => {
         transition={{ duration: 0.5 }}
       >
         <h2 className="text-center text-[2.75rem] font-extrabold capitalize text-black max-xs:text-[2rem] xxl:text-[4rem] dark:text-white">
-          I Know that <span className=" text-primary-500">Good Design</span>{" "}
+          Crafting Stunning <span className=" text-primary-500">Websites</span>{" "}
           <br />
-          means <span className=" text-primary-500">Good Business</span>
+          Driving <span className=" text-primary-500">Digital Success</span>
         </h2>
 
         <div className="mt-8 flex flex-wrap items-start justify-center">

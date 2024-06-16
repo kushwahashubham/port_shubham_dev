@@ -69,6 +69,7 @@ const Skills = ({
                 "Back-end",
                 "Version Control",
                 "Database",
+                "Digital Marketing",
                 "All",
               ].map((item, index) => (
                 <div
